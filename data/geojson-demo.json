@@ -1,0 +1,7 @@
+{
+  "type" : "FeatureCollection",
+  "crs" : {"type" : "name", "properties" : { "name" : "EPSG:4326" } },
+  "features" : [
+  { "type" : "Feature" , "geometry" : { "type" : "Point" , "coordinates" : [255351.0429, 474966.9279, 1]},"properties":{"id":"1","mag":2},"id":"fid-7f608c2f_177ce12a85f_-8000"},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[255529.2966,474272.46,2]},"properties":{"id":"1","mag":2},"id":"fid-7f608c2f_177ce12a85f_-7fff"},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[256166.0583,473979.4492,3.111]},"properties":{"id":"1","mag":2},"id":"fid-7f608c2f_177ce12a85f_-7ffe"}]}
