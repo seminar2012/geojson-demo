@@ -1,9 +1,3 @@
-/**************************************
- * Copyright(C),Navinfo
- * Package: com.navinfo.a1m
- * Author: seminar
- * Date: Created in 2021/2/23 14:17
- **************************************/
 package com.test;
 
 import org.geotools.geojson.geom.GeometryJSON;

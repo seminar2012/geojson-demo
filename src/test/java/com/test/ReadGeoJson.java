@@ -1,9 +1,3 @@
-/**************************************
- * Copyright(C),Navinfo
- * Package: com.navinfo.a1m
- * Author: seminar
- * Date: Created in 2021/2/23 14:52
- **************************************/
 package com.test;
 
 import com.alibaba.fastjson.JSON;
