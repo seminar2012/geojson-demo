@@ -22,7 +22,7 @@ import java.util.*;
  *@since 1.0.0
  *************************************/
 @Slf4j
-public class Doulag {
+public class DoulagUtil {
 
     /**
      * 计算两点距离
