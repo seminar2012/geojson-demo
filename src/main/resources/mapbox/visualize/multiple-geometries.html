@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Add multiple geometries from one GeoJSON source</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoibGl1bWsiLCJhIjoiY2phY2pyZWp6MGFtMjJ6cGw2YnhqM2F6aCJ9.7ganszcmTQ4q_yRYeLc99g';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [120.06022, 30.37818], //地图中心点
+        zoom: 10
+    });
+
+    map.on('load', function () {
+        map.addSource('national-park', {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Polygon',
+                            'coordinates': [
+                                [
+//                                    [120.18018999, 30.28821708888],
+//                                    [120.15367153178, 30.250148432492],
+//                                    [120.1123, 30.2598888],
+//                                   /* [120.01367153178, 30.160148432492],*/
+//                                    [120.12018999, 30.22821708888]
+                                    [120.198229, 30.29721],
+                                    [120.198229, 30.279224],
+                                    [120.18019, 30.27023],
+                                    [120.162151, 30.279224],
+                                    [120.162151, 30.29721],
+                                    [120.18019, 30.306204],
+                                    [120.198229, 30.29721]
+                                ]
+                            ]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Polygon',
+                            'coordinates': [
+                                [
+                                    [120.429802, 30.412075],
+                                    [120.410863, 30.361801],
+                                    [120.349577, 30.361801],
+                                    [120.330638, 30.412075],
+                                    [120.38022, 30.443147],
+                                    [120.429802, 30.412075]
+                                ]
+                            ]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'MultiLineString',
+                            'coordinates': [
+                                [
+                                    [
+                                        120.14322240845,
+                                        30.236064370321
+                                    ],
+                                    [
+                                        120.1233608862,
+                                        30.224531990576
+                                    ],
+                                    [
+                                        120.0831192649,
+                                        30.238661839459
+                                    ],
+                                    [
+                                        120.07632605996,
+                                        30.252467111065
+                                    ]
+                                ],
+                                [
+                                    [
+                                        120.13018670197,
+                                        30.238217082645
+                                    ],
+                                    [
+                                        120.11140448008,
+                                        30.242484465583
+                                    ],
+                                    [
+                                        120.11367153178,
+                                        30.249148432492
+                                    ]
+                                ],
+                                [
+                                    [120.070383, 30.44959],
+                                    [120.099372, 30.441705],
+                                    [120.108054, 30.437115], [120.116023, 30.431647],
+                                    [120.12316, 30.425381],
+                                    [120.138587, 30.402787],
+                                    [120.141479, 30.394364], [120.14316, 30.3857],
+                                    [120.143604, 30.376924], [120.137544, 30.351228],
+                                    [120.13316, 30.3433], [120.127689, 30.335891],
+                                    [120.121212, 30.329112], [120.113826, 30.323066],
+                                    [120.105641, 30.31784], [120.096779, 30.313515],
+                                    [120.087371, 30.310153], [120.077559, 30.307805],
+                                    [120.067488, 30.306507], [120.05731, 30.306277],
+                                    [120.037233, 30.30902], [120.027634, 30.311953],
+                                    [120.010031, 30.320721], [120.002288, 30.326426], [119.995409, 30.332902], [119.989496, 30.340054],
+                                    [119.984637, 30.347774], [119.980905, 30.355947], [119.978356, 30.364452], [119.977027, 30.373161],
+                                    [119.976938, 30.381945], [119.97809, 30.390673], [119.980467, 30.399215], [119.984033, 30.407443],
+                                    [119.988735, 30.415235], [119.994503, 30.422475], [120.00125, 30.429054], [120.008876, 30.434875],
+                                    [120.017268, 30.43985], [120.0263, 30.443907],
+                                    [120.035837, 30.446983], [120.045738, 30.449034]
+                                ]
+                            ]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'LineString',
+                            'coordinates': [
+                                [120.067304, 30.39167],
+                                [120.067304, 30.36469],
+                                [120.04022, 30.3512],
+                                [120.013136, 30.36469],
+                                [120.013136, 30.39167],
+                                [120.04022, 30.40516]
+                            ]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [120.14018999, 30.26821708888]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [120.15367153178, 30.280148432492]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [120.270386, 30.243251]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [120.089994, 30.243251]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [120.18022, 30.37818]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [120.35022, 30.17818]
+                        }
+                    }
+                ]
+            }
+        });
+
+        map.addLayer({
+            'id': 'park-boundary',
+            'type': 'fill',
+            'source': 'national-park',
+            'paint': {
+                'fill-color': '#AE00F2',
+                'fill-opacity': 0.4
+            },
+            'filter': ['==', '$type', 'Polygon']
+        });
+
+        map.addLayer({
+            'id': 'route',
+            'type': 'line',
+            'source': 'national-park',
+            'layout': {
+                'line-join': 'round',
+                'line-cap': 'round'
+            },
+            'paint': {
+                'line-color': '#DC143C',
+                'line-width': 7
+            }
+        });
+
+        map.addLayer({
+            'id': 'park-volcanoes',
+            'type': 'circle',
+            'source': 'national-park',
+            'paint': {
+                'circle-radius': 6,
+                'circle-color': '#0000FF'
+            },
+            'filter': ['==', '$type', 'Point']
+        });
+    });
+</script>
+
+</body>
+</html>
